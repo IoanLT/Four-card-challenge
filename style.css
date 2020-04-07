@@ -1,0 +1,193 @@
+
+/* Table of contents:
+
+1. Global styles; 
+
+2. Typography;
+
+3. Layout;
+
+4. Components;
+
+5. Media queries
+
+*/
+
+/* 1. =============
+      Global styles
+      ============= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  background: hsl(0, 0%, 98%);
+}
+
+
+/* 2. =============
+      Typography
+      ============= */ 
+
+h2 {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+  font-size: 1.8rem;
+  
+}
+
+h3 {
+  color: hsl(234, 12%, 34%);
+}
+      
+.bold {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  
+}
+
+header p {
+  font-size: 13px;
+  color: hsl(229, 6%, 66%);
+  margin: auto;
+  padding: 0px 30rem;
+}
+
+#cards p {
+  font-size: 10px;
+  color: hsl(229, 6%, 66%);
+}
+
+
+/* 3. =============
+      Layout
+      ============= */
+
+.container {  
+  margin: auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+header p {
+  margin: 1rem 0;
+}
+
+#cards {
+  /* background: #777; */
+  height: 100%;    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  gap: 1.5rem;
+  text-align: center;     
+  margin: 3rem 15rem;
+}
+
+
+/* 4. =============
+      Components
+      ============= */
+
+
+.card {
+  background: #fff;
+  height: 43%;
+  width: 100%;  
+  text-align: left;   
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.75rem 0.75rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+
+.supervisor, 
+.team-builder,
+.karma, 
+.calculator {
+  padding-top: 1.5rem;
+  text-align: right;
+}
+
+.card1 {
+  margin: auto;  
+  border-top: 3px solid hsl(180, 62%, 55%);  
+   
+}      
+      
+.card2 {          
+  border-top: 3px solid hsl(0, 78%, 62%); 
+  margin-bottom: 1.5rem; 
+  
+}
+      
+.card3 {         
+  border-top: 3px solid hsl(34, 97%, 64%); 
+  margin-bottom: 1.5rem;
+}
+      
+.card4 {
+  margin: auto;         
+  border-top: 3px solid hsl(212, 86%, 64%); 
+
+}
+
+
+/* 5. =============
+      Media queries
+      ============= */
+
+@media only screen and (max-width: 500px) {
+
+  h2 {
+    font-size: 1.4rem;    
+  }
+
+  header p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 13px;
+    color: hsl(229, 6%, 66%);
+    line-height: 1.4;
+    
+  }   
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  header {
+    margin: 3rem 1rem;
+  }
+
+  #cards p {
+    font-size: 0.8rem;
+  }
+
+
+  #cards {    
+    height: 100%;        
+    display: flex;
+    flex-direction: column;    
+    text-align: center;  
+    margin: 3rem 1rem;
+  }
+
+  .card {
+    background: #fff;
+    height: 43%;
+    width: 100%;  
+    text-align: left;   
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.75rem 0.75rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  }
+
+
+
+
+}
+
